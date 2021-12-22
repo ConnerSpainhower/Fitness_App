@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.testingapps">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.example.testingapps.app.httpRequest"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TestingApps"
+        android:usesCleartextTraffic="true"
+        >
+        <activity
+            android:name="com.example.testingapps.CalorieCounter_activity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.testingapps.register"
+            android:label="@string/register" />
+        <activity
+            android:name="com.example.testingapps.trainerHome"
+            android:label="@string/trainerHome" />
+        <activity
+            android:name="com.example.testingapps.trainerLogin"
+            android:label="@string/trainerLogin" />
+        <activity
+            android:name="com.example.testingapps.adminLogin"
+            android:label="@string/admin" />
+        <activity
+            android:name="com.example.testingapps.foodEntryPage"
+            android:label="@string/FoodPage" />
+        <activity
+            android:name="com.example.testingapps.adminHome"
+            android:label="@string/adminHome" />
+        <activity
+            android:name="com.example.testingapps.Login"
+            android:label="@string/Login" />
+        <activity
+            android:name="com.example.testingapps.main_screen_activity"
+            android:label="@string/MainScreen" />
+        <activity
+            android:name="com.example.testingapps.calculator"
+            android:label="@string/calculator" />
+        <activity
+            android:name="com.example.testingapps.workoutPage"
+            android:label="@string/workouts" />
+        <activity
+            android:name="com.example.testingapps.upperbody"
+            android:label="@string/upperbody" />
+        <activity
+            android:name="com.example.testingapps.legs"
+            android:label="@string/legs" />
+        <activity
+            android:name="com.example.testingapps.core"
+            android:label="@string/core" />
+        <activity
+            android:name="com.example.testingapps.cardio"
+            android:label="@string/cardio" />
+        <activity
+            android:name="com.example.testingapps.Chat"
+            android:label="@string/Chat" />
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

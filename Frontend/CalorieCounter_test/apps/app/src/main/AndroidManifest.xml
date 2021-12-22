@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.caloriecounter_test">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name="com.example.caloriecounter_test.app.httpRequest"
+
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CalorieCounter_test">
+        <activity
+            android:name="com.example.caloriecounter_test.CalorieCounter_activity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.caloriecounter_test.register"
+            android:label="@string/register" />
+        <activity
+            android:name="com.example.caloriecounter_test.Login"
+            android:label="@string/Login" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+</manifest>

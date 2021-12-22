@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">testingApp</string>
+    <string name="register">register</string>
+    <string name="Login">Login</string>
+    <string name="MainScreen">main_screen_activity</string>
+    <string name="FoodPage">foodEntryPage</string>
+    <string name="calculator">calculator</string>
+    <string name="workouts">workoutpage</string>
+    <string name="upperbody">upperbody</string>
+    <string name="legs">legs</string>
+    <string name="core">core</string>
+    <string name="cardio">cardio</string>
+    <string name="Chat">Chat</string>
+    <string name="admin">adminLogin</string>
+    <string name="adminHome">adminHome</string>
+    <string name="trainerHome">trainerHome</string>
+    <string name="trainerLogin">trainerLogin</string>
+
+</resources>

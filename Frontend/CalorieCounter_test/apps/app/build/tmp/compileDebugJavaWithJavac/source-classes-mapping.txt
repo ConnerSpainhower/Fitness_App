@@ -1,0 +1,46 @@
+com/example/caloriecounter_test/foodEntryPage.java
+ com.example.caloriecounter_test.foodEntryPage
+ com.example.caloriecounter_test.foodEntryPage$1
+com/example/caloriecounter_test/Calender.java
+ com.example.caloriecounter_test.Calender
+ com.example.caloriecounter_test.Calender$1
+com/example/caloriecounter_test/internet/networkCalls.java
+ com.example.caloriecounter_test.internet.networkCalls
+com/example/caloriecounter_test/CalorieTotal.java
+ com.example.caloriecounter_test.CalorieTotal
+com/example/caloriecounter_test/app/httpRequest.java
+ com.example.caloriecounter_test.app.httpRequest
+com/example/caloriecounter_test/BuildConfig.java
+ com.example.caloriecounter_test.BuildConfig
+com/example/caloriecounter_test/Login.java
+ com.example.caloriecounter_test.Login
+ com.example.caloriecounter_test.Login$1
+ com.example.caloriecounter_test.Login$2
+com/example/caloriecounter_test/register.java
+ com.example.caloriecounter_test.register
+ com.example.caloriecounter_test.register$1
+com/example/caloriecounter_test/CalorieCounter_activity.java
+ com.example.caloriecounter_test.CalorieCounter_activity
+ com.example.caloriecounter_test.CalorieCounter_activity$1
+ com.example.caloriecounter_test.CalorieCounter_activity$2
+ com.example.caloriecounter_test.CalorieCounter_activity$3
+ com.example.caloriecounter_test.CalorieCounter_activity$4
+ com.example.caloriecounter_test.CalorieCounter_activity$5
+ com.example.caloriecounter_test.CalorieCounter_activity$6
+ com.example.caloriecounter_test.CalorieCounter_activity$7
+ com.example.caloriecounter_test.CalorieCounter_activity$8
+com/example/caloriecounter_test/MainActivity.java
+ com.example.caloriecounter_test.MainActivity
+ com.example.caloriecounter_test.MainActivity$1
+ com.example.caloriecounter_test.MainActivity$1$1
+ com.example.caloriecounter_test.MainActivity$2
+ com.example.caloriecounter_test.MainActivity$2$1
+ com.example.caloriecounter_test.MainActivity$3
+ com.example.caloriecounter_test.MainActivity$3$1
+ com.example.caloriecounter_test.MainActivity$3$2
+ com.example.caloriecounter_test.MainActivity$3$3
+ com.example.caloriecounter_test.MainActivity$3$4
+ com.example.caloriecounter_test.MainActivity$3$5
+ com.example.caloriecounter_test.MainActivity$3$6
+ com.example.caloriecounter_test.MainActivity$3$7
+ com.example.caloriecounter_test.MainActivity$3$8

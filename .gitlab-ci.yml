@@ -1,0 +1,70 @@
+stages:
+  - mavenbuild
+  - maventest
+  - mavenDeploy
+  - androidbuild
+  - androidtest
+
+maven-build:   #this is a JOB
+  stage: mavenbuild
+  tags:
+    - springboot_tag  # this is LINK to the shell runner on the remote-server 
+  script:
+    - cd Backend
+    - cd fitness_app_backend
+    - mvn package -B
+
+maven-test:
+  stage: maventest
+  tags:
+    - springboot_tag
+  script:
+    - cd Backend
+    - cd fitness_app_backend
+    - mvn test
+  artifacts:
+    paths:
+      - Backend/fitness_app_backend/target/*.jar
+
+autoDeploy:
+  stage: mavenDeploy
+  tags:
+    - springboot_tag
+  script:
+    - cd Backend
+    - cd fitness_app_backend
+    - mvn package
+    - sudo mv target/*.jar /target/web-demo.jar
+    - sudo systemctl stop system-web-demo
+    - sudo systemctl start system-web-demo
+
+
+android-build:
+  image: alvrme/alpine-android:android-28-jdk11
+  stage: androidbuild
+  before_script:
+    - export GRADLE_USER_HOME=pwd/.gradle
+    - chmod +x ./Frontend/testingApps/gradlew
+  tags:
+   - android_build
+  script:
+    - cd Frontend
+    - cd testingApps
+    - ./gradlew build
+  artifacts:
+    paths:
+    - Android_test/app/build/outputs/
+
+android-test:
+  image: alvrme/alpine-android:android-28-jdk11
+  stage: androidtest
+  before_script:
+    - export GRADLE_USER_HOME=pwd/.gradle
+    - chmod +x ./Frontend/testingApps/gradlew
+  tags:
+   - android_build
+  script:
+    - cd Frontend
+    - cd testingApps
+    - ./gradlew test
+
